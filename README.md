@@ -55,10 +55,11 @@ while ((znak = getchar()) != EOF)
   ```c
   char buffer[255];
   ```
-  - Poté pomocí fukce sscanf_s načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
+  - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
   ```c
   fgets(buffer, 255, stdin);
   ```
+  - Nakonec 
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.

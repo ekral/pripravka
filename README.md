@@ -24,9 +24,11 @@ printf("promenna x ma hodnotu %d\n", x);
 ```c
 printf("promenna x je ulozena na adrese %p\n", &x);
 ```
-## 2. Vstup z konzole, aritmetické operátory, typ double
+## 2. Vstup z konzole, operátor přiřazení, aritmetické operátory, typ double
+- Operátor přiřazení vrací 
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede, nevyprázdní se buffer
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.
 
+Úkol - vypočtěte hodnotu BMI [řešení](/day2/main_bmi.c)

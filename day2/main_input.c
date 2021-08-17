@@ -3,7 +3,7 @@
 int main()
 {
 	int x = 0;
-	
+
 	// Reseni s fgets a sscanf_s
 	// Why does everyone say not to use gets()?
 	// http://c-faq.com/stdio/getsvsfgets.html
@@ -21,12 +21,5 @@ int main()
 		printf("Pocet uspesne prevedenych znacek %d\n", pocet);
 		printf("Zadal jsi cislo %d\n", x);
 	}
-	
-	int znak;
-	while ((znak = getchar()) != '\n' && znak != EOF)
-	{
-		printf("%c (kod %d)\n", znak, znak);
-	}
-	
 }
 

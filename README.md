@@ -42,7 +42,7 @@ int b;
 
 a = b = 1;
 ```
-- Nebo v cyklu při čtení z konzole. Kompletní příklad najdete v souboru [soubor main.c](/day1/main_papousek.c)
+- Nebo v cyklu při čtení z konzole. Kompletní příklad najdete v souboru [main_papousek.c](/day2/main_papousek.c).
 ```c
 int znak;
 while ((znak = getchar()) != EOF)
@@ -51,7 +51,7 @@ while ((znak = getchar()) != EOF)
 }
 ```
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
-- Vhodnější je použít například funkci **sscanf_s**. 
+- Vhodnější je použít například funkci **sscanf_s**.  Kompletní příklad najdete v souboru [main_input.c](/day2/main_input.c).
   - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli. 
 	```c
 	char buffer[255];
@@ -79,4 +79,4 @@ double vysledek = 1.0 / 2.0;
 ``` 
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.
 
-Úkol - vypočtěte hodnotu BMI [řešení](/day2/main_bmi.c)
+Úkol - vypočtěte hodnotu BMI. Řešení najdete v souboru [main.bmi](/day2/main_bmi.c)

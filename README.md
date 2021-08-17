@@ -1,6 +1,6 @@
 # Programátorská přípravka 2021
 
-# 1. Úvod
+## 1. Úvod
 Tento [soubor main.c](/day1/main.c) obsahuje ukázku základy práce s proměnou.
 - Proměnná je pojmenovaná hodnota v paměti, kdy její typ určuje délku a množinu operací které s ním můžeme provádět
 ```c

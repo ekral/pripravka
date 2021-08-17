@@ -45,12 +45,11 @@ a = b = 1;
 - Nebo v cyklu při čtení z konozle, kompletní příklad najdete v souboru [soubor main.c](/day1/main_papousek.c)
 ```c
 int znak;
-while ((znak = getchar()) != '\n' && znak != EOF)
+while ((znak = getchar()) != EOF)
 {
 	printf("%c (kod %d)\n", znak, znak);
 }
 ```
-
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede, nevyprázdní se buffer
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.

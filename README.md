@@ -42,7 +42,7 @@ int b;
 
 a = b = 1;
 ```
-- Nebo v cyklu při čtení z konozle, kompletní příklad najdete v souboru [soubor main.c](/day1/main_papousek.c)
+- Nebo v cyklu při čtení z konozle. Kompletní příklad najdete v souboru [soubor main.c](/day1/main_papousek.c)
 ```c
 int znak;
 while ((znak = getchar()) != EOF)
@@ -51,15 +51,18 @@ while ((znak = getchar()) != EOF)
 }
 ```
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Vhodnější je použít například funkci sscanf_s. 
-  - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli.
+  - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
   ```c
   char buffer[255];
   ```
-  - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
+  - Poté pomocí fukce [fgets](https://en.cppreference.com/w/c/io/fgets) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
   ```c
   fgets(buffer, 255, stdin);
   ```
-  - Nakonec 
+    - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole. Pokud váš překladač nepodporuje bezpečnější sscanf_s, můžete použít sscanf.
+  ```c
+  int pocet = sscanf_s(buffer, "%d", &x);
+  ```
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.

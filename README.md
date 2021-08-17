@@ -25,7 +25,10 @@ printf("promenna x ma hodnotu %d\n", x);
 printf("promenna x je ulozena na adrese %p\n", &x);
 ```
 ## 2. Vstup z konzole, operátor přiřazení, aritmetické operátory, typ double
-- Operátor přiřazení vrací 
+- Operátor přiřazení vloží hodnotu do paměti na adresu proměnné. Pozor, neplést s relační operátorem rovnosti **==**
+```c
+int x = 1;
+```
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede, nevyprázdní se buffer
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.

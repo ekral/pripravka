@@ -50,20 +50,23 @@ while ((znak = getchar()) != EOF)
 	printf("%c (kod %d)\n", znak, znak);
 }
 ```
-- Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Vhodnější je použít například funkci sscanf_s. 
+- Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Vhodnější je použít například funkci **sscanf_s**. 
   - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
   ```c
   char buffer[255];
   ```
-  - Poté pomocí fukce [fgets](https://en.cppreference.com/w/c/io/fgets) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
+  - Poté pomocí fukce [fgets](https://en.cppreference.com/w/c/io/fgets) načteme znaky z konzole a uložíme je do pole *buffer*. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
   ```c
   fgets(buffer, 255, stdin);
   ```
-    - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole. Pokud váš překladač nepodporuje bezpečnější sscanf_s, můžete použít sscanf.
+    - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) převedeme řetězec v poli *buffer* na celé číslo. Pokud se převod nezdaří, tak funkce vrátí hodnotu *0*, jinak vratí počet převedených argumentů, v naše případě hodnotu *1*.
   ```c
   int pocet = sscanf_s(buffer, "%d", &x);
   ```
-- Formátovací značka pro double je %lf
+- Formátovací značka pro fukce [printf](https://en.cppreference.com/w/c/io/fprintf) a [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) pro typ double je %lf
+ ```c
+  int pocet = sscanf_s(buffer, "%d", &x);
+  ```
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.
 

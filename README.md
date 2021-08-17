@@ -1,7 +1,7 @@
 # Programátorská přípravka 2021
 
 ## 1. Úvod, co je to proměnná, typ int a jeho výpis na konzoli
-Tento [soubor main.c](/day1/main.c) obsahuje ukázku základy práce s proměnou.
+Tento [soubor main.c](/day1/main.c) obsahuje ukázku základní práce s proměnou.
 - Proměnná je pojmenovaná hodnota v paměti, kdy její typ určuje délku a množinu operací které s ním můžeme provádět
 ```c
 int x = 0;

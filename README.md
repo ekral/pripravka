@@ -50,7 +50,15 @@ while ((znak = getchar()) != EOF)
 	printf("%c (kod %d)\n", znak, znak);
 }
 ```
-- Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede, nevyprázdní se buffer
+- Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Vhodnější je použít například funkci sscanf_s. 
+  - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli.
+  ```c
+  char buffer[255];
+  ```
+  - Poté pomocí fukce sscanf_s načteme znaky z konzole a uložíme je do pole buffer. Funkce načte maximálně 255 znaků a máte tedy jistotu že se všechny znaky vejdou do našeho pole.
+  ```c
+  fgets(buffer, 255, stdin);
+  ```
 - Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.

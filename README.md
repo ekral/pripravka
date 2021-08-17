@@ -50,7 +50,7 @@ while ((znak = getchar()) != EOF)
 	printf("%c (kod %d)\n", znak, znak);
 }
 ```
-- Funkce fscanf je velmi složitá na použití, například v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
+- Funkce **fscanf** je velmi složitá na použití, například v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
 - Vhodnější je použít například funkci **sscanf_s**.  Kompletní příklad najdete v souboru [main_input.c](/day2/main_input.c).
   - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli. 
 	```c

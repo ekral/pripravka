@@ -1,6 +1,6 @@
 # Programátorská přípravka 2021
 
-## 1. Úvod
+## 1. Úvod, co je to proměnná, typ int a jeho výpis na konzoli
 Tento [soubor main.c](/day1/main.c) obsahuje ukázku základy práce s proměnou.
 - Proměnná je pojmenovaná hodnota v paměti, kdy její typ určuje délku a množinu operací které s ním můžeme provádět
 ```c
@@ -24,9 +24,9 @@ printf("promenna x ma hodnotu %d\n", x);
 ```c
 printf("promenna x je ulozena na adrese %p\n", &x);
 ```
-## 2. Vstup z konzole a aritmetické operátory
+## 2. Vstup z konzole, aritmetické operátory, typ double
 - Proč nepoužívat fscanf - v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede, nevyprázdní se buffer
-- Formátovací značka pro double je %lf a pro int je %d
+- Formátovací značka pro double je %lf
 - Numerická konstanta, například 1 je typu int a 1.0 je typu double, pozor při dělení.
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.
 

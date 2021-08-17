@@ -51,7 +51,7 @@ while ((znak = getchar()) != EOF)
 }
 ```
 - Funkce **fscanf** je velmi složitá na použití, například v input bufferu nám zůstává znak '\n' a pokud se konverze nepovede tak se nevyprázdní buffer. Problém je pospsaný podrobněji například [zde](http://c-faq.com/stdio/getsvsfgets.html).
-- Vhodnější je použít například funkci **sscanf_s**.  Kompletní příklad najdete v souboru [main_input.c](/day2/main_input.c).
+- Vhodnější je použít například funkci [sscanf_s](https://en.cppreference.com/w/c/io/fscanf).  Kompletní příklad najdete v souboru [main_input.c](/day2/main_input.c).
   - Nejprve si rezervujeme paměť (pole buffer) do které chceme načíst zadaný řádek na konzoli. 
 	```c
 	char buffer[255];
@@ -79,4 +79,4 @@ double vysledek = 1.0 / 2.0;
 ``` 
 - Ve zdrojovém terminálu se používá desetinná tečka. Při zadávání hodnoti na konzoli záleží na tom v jakém jazykovém prostředí se používá.
 
-Úkol - vypočtěte hodnotu BMI. Řešení najdete v souboru [main.bmi](/day2/main_bmi.c)
+Úkol - vypočtěte hodnotu BMI. Řešení najdete v souboru [main_bmi.c](/day2/main_bmi.c)

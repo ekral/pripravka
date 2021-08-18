@@ -1,31 +1,43 @@
 #include <stdio.h>
 #include <math.h>
-
+#include <stdlib.h>
 int main()
 {
-	double a = 3;
-	double b = 4;
-	double c = 5; // c je prepona
+	// student(ka) psal test a uspeli, pokud
+	// 1. ziskal(a) vice nez 50 bodu z kazdeho testu
+	// 2. ziskal(a) alespon z jednoho testu vice nez 50 bodu
+	// napiste ano, pokud student(ka) v testu uspel
+	// nebo ne, poukud neuspel
+	int test1 = 75;
+	int test2 = 75;
 
-	if (a + b > c)
+	// 1. Uspel v jednom testu
+	if (test1 > 50)
 	{
-		printf("Je to trojuhelnik\n");
-
-		// vypiste 1 pokud je trojuhelnik pravouhly, jinak 0
-		int vysledek = (c * c) == (a * a) + (b * b);
-
-		// cokoliv co neni 0 je pravda
-		if (vysledek)
-		{
-			printf("trojuhelnik je pravouhly\n");
-		}
-		else
-		{
-			printf("trojuhelnik neni pravouhly\n");
-		}
+		printf("ano");
 	}
 	else
 	{
-		printf("neni trojuhelnik");
+		printf("ne");
+	}
+
+	// 2. Uspel v kazdem ze dvou testu
+	if (test1 > 50 && test2 > 50)
+	{
+		printf("ano");
+	}
+	else
+	{
+		printf("ne");
+	}
+
+	// 3. Uspel alespon v jednom
+	if (test1 > 50 || test2 > 50)
+	{
+		printf("ano");
+	}
+	else
+	{
+		printf("ne");
 	}
 }

@@ -94,7 +94,7 @@ int main()
 }
 ``` 
 ### 2. Úkol - vypočtěte výši splátky hypotéky dle [vzorce](http://www.aristoteles.cz/matematika/financni_matematika/hypoteka-vypocet.php). 
-  - Pokud máme roční úrokovou míru *3%*, tak *i = 3% / 100 / 12 = 0,0025*, podělíme tedy 100 abychom z procent získali desetinné číslo a podělíme *12*, protože máme *12* splátek za rok.
+  - Pokud máme roční úrokovou míru *3%*, tak *i = 3% / 100 / 12 = 0,0025*, podělíme ji tedy 100 abychom z procent získali desetinné číslo a podělíme *12*, protože máme *12* splátek za rok.
   - počet splátek představuje počet měsíčních splátek, tedy *n = 30 let * 12 měsíců = 360* 
   - Mocninu spočítáme pomocí funkce *pow* z knihovny *math.h*
 ```c

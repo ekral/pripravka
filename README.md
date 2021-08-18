@@ -60,7 +60,7 @@ while ((znak = getchar()) != EOF)
 	```c
 	fgets(buffer, 255, stdin);
 	```
-    - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) převedeme řetězec v poli *buffer* na celé číslo. Pokud se převod nezdaří, tak funkce vrátí hodnotu *0*, jinak vratí počet převedených argumentů, v naše případě hodnotu *1*.
+  - Poté pomocí fukce [sscanf_s](https://en.cppreference.com/w/c/io/fscanf) převedeme řetězec v poli *buffer* na celé číslo. Pokud se převod nezdaří, tak funkce vrátí hodnotu *0*, jinak vratí počet převedených argumentů, v naše případě hodnotu *1*.
 	```c
 	int pocet = sscanf_s(buffer, "%d", &x);
 	```

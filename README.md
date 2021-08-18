@@ -1,5 +1,7 @@
 # Programátorská přípravka 2021
 
+[Prezentace základy](https://utbcz-my.sharepoint.com/:p:/g/personal/ekral_utb_cz/EfaazTR47bdIp_H0JdlpIfIBx5rZztpmYg1P2T2UJP9gWA?e=ey48Hw)
+
 ## 1. Úvod, co je to proměnná, typ int a jeho výpis na konzoli
 Tento [soubor main.c](/day1/main.c) obsahuje ukázku základní práce s proměnou.
 - Proměnná je pojmenovaná hodnota v paměti, kdy její typ určuje délku a množinu operací které s ním můžeme provádět

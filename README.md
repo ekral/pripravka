@@ -84,4 +84,24 @@ double vysledek = 1.0 / 2.0;
 ## 3. Aritmetické operace
 
 1. Úkol - vypočtěte obvod a obsah ([Heronův vzorec](https://cs.wikipedia.org/wiki/Heron%C5%AFv_vzorec)) trojúhelníka . Řešení najdete v souboru [main_bmi.c](/day3/main_trojuhlenik.c)
-2. Úkol - vypočtěte výši splátky hypotéky dle [vzorce](http://www.aristoteles.cz/matematika/financni_matematika/hypoteka-vypocet.php). 
+  - Mocninu spočítáme pomocí funkce *sqrt* z knihovny math.h
+```c
+#include <math.h>
+
+int main()
+{
+	double odmocnina = sqrt(9.0);
+}
+``` 
+3. Úkol - vypočtěte výši splátky hypotéky dle [vzorce](http://www.aristoteles.cz/matematika/financni_matematika/hypoteka-vypocet.php). 
+  - Pokud máme roční úrokovou míru 3%, tak i = 3% / 100 / 12 = 0,0025, podělíme tedy 100 abychom z procent získali desetinné číslo a podělíme 12, protože máme 12 splátek za rok.
+  - počet splátek představuje počet měsíčních splátek, tedy n = 30 let * 12 měsíců = 360 
+  - Mocninu spočítáme pomocí funkce *pow* z knihovny math.h
+```c
+#include <math.h>
+
+int main()
+{
+	double mocnina = pow(2.0, 8.0);
+}
+``` 

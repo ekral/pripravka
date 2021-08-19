@@ -115,5 +115,5 @@ int main()
 ## 3. Booleanovské (logické) operátory
 - relační operátory
 - operátor *&&* (a zároveň) 
-- operátor **||**
+- operátor **||** (nebo) 
 - Podmíněný příkaz pomocí *if*

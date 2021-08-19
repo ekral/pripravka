@@ -117,3 +117,8 @@ int main()
 - operátor *&&* (a zároveň) 
 - operátor **||** (nebo) 
 - Podmíněný příkaz pomocí *if*
+
+## 4. Booleanovské (logické) operátory
+- logické operátory
+- cyklus while 
+- cyklus for

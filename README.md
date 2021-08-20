@@ -122,3 +122,11 @@ int main()
 - logické operátory
 - cyklus while 
 - cyklus for
+
+## 4. Pole
+- definice a inicializace pole
+- suma prvku v poli
+- hledani nejmensiho/nejvetsiho prvku v poli
+
+[Prezentace na téma pole](https://utbcz-my.sharepoint.com/:p:/g/personal/ekral_utb_cz/ERwZNKawLe5ElzHsIW1lYW8By2KLQvkjl0WIKcatK9MjKg?e=bmdkVe)
+

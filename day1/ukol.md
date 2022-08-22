@@ -1,8 +1,8 @@
 ## Teorie
   
-- promenna je pojmenovana hodnota v pameti RAM
-- pamet pro lokalni promennou prirazuje runtime jazyka C automaticky
-- adresu promenne ziskame pomoci operatoru &, napriklad &datum
+- Proměnná je pojmenovaná hodnota v paměti RAM.
+- Paměť pro lokalní proměnnou přiřazuje runtime jazyka C automaticky.
+- Adresu promeěnné získame pomocí operátoru &, například ```&datum```
 - kolik bytu zabere promenna v pameti ziskame pomoci klicoveho slova sizeof, napriklad sizeof(datum)
 
 ## Ukol

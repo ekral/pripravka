@@ -7,7 +7,7 @@
 
 ## Ukol
 
-Vypiste na terminal, kolik let ma student s datum narozeni v promenne datum
+Vypište na terminál, kolik let má student s datem narození v proměnné ```datum```.
 
 ---
 

@@ -2,8 +2,8 @@
   
 - Proměnná je pojmenovaná hodnota v paměti RAM.
 - Paměť pro lokalní proměnnou přiřazuje runtime jazyka C automaticky.
-- Adresu promeěnné získame pomocí operátoru &, například ```&datum```
-- kolik bytu zabere promenna v pameti ziskame pomoci klicoveho slova sizeof, napriklad sizeof(datum)
+- Adresu promeěnné získame pomocí operátoru ```&```, například ```&datum```.
+- Kolik bytu zabere proměnná v paměti zjistíme pomocí klíčového slova ```sizeof```, například ```sizeof(datum)```.
 
 ## Ukol
 

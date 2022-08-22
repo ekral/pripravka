@@ -36,3 +36,20 @@ int main()
 	return 1;
 }
 ```
+### Řešení
+
+```c 
+#include <stdio.h>
+//#include <time.h>
+
+int main() 
+{
+	int datum = 2002;
+	int aktualni = 2022;
+	int vek = aktualni - datum;
+
+	printf("Vek %d\n", vek);
+
+	return 1;
+}
+```

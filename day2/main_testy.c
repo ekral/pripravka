@@ -1,8 +1,5 @@
 #include <stdio.h>
-extern void Funkce()
-{
 
-}
 int main()
 {
 	// studenti psali testy, mohli ziskat 0 az 100 bodu

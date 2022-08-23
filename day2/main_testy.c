@@ -1,5 +1,8 @@
 #include <stdio.h>
+extern void Funkce()
+{
 
+}
 int main()
 {
 	// studenti psali testy, mohli ziskat 0 az 100 bodu
@@ -49,6 +52,26 @@ int main()
 	}
 
 	// Ukoly 1 a 2 prepiste s vyuzitim operatoru && a ||
+	// 1. Alespon jeden
+
+	if (testA > 50 || testB > 50)
+	{
+		printf("splnil");
+	}
+	else
+	{
+		printf("nesplnil");
+	}
+
+	// 2. Oba dva
+	if (testA > 50 && testB > 50)
+	{
+		printf("splnil");
+	}
+	else
+	{
+		printf("nesplnil");
+	}
 
 	return 1;
 }

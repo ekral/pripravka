@@ -1,15 +1,19 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
 
-void UcetnickyFormat(char* buffer, char* original, int bufferLength)
+bool UcetnickyFormat(char* buffer, char* original, int bufferLength)
 {
 	int originalLength = strlen(original);
 
 	int zbytek = originalLength % 3;
 	int pocetTrojic = originalLength / 3;
 
-	assert(bufferLength > originalLength + pocetTrojic);
+	if (bufferLength <= originalLength + pocetTrojic)
+	{
+		return false;
+	}
 	
 	int i = 0;
 	int j = 0;
@@ -32,14 +36,18 @@ void UcetnickyFormat(char* buffer, char* original, int bufferLength)
 	buffer[j - 1] = 0;
 }
 
-#define LENGTH 255
+#define LENGTH 256
 
 int main()
 {
-	char original[] = "1000000";
+	double castka = 1000000;
+	char original[LENGTH];
 	char buffer[LENGTH];
-	
-	UcetnickyFormat(buffer, original, LENGTH);
 
-	printf("%s\n", buffer);
+	sprintf_s(original, LENGTH, "%.0lf", castka);
+
+	if (UcetnickyFormat(buffer, original, LENGTH))
+	{
+		printf("%s\n", buffer);
+	}
 }
